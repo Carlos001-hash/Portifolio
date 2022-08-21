@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="form">
+        <form action="#">
+          <div>
+            <h1>Cadastrar</h1>
+          </div>
+          <div id="ms-erro"></div>
+          <div class="label-input-grup">
+            <div class="name-password">
+
+              <div class="label-input">
+                <input type="text" id="input-name" name="name" placeholder=""  required>
+                <label id="label-name" for="input-name">Primeiro Nome</label>
+              </div>
+    
+              <div class="label-input">
+                <input type="text" id="input-sobrenome" name="lastname" placeholder="" required>
+                <label id="label-sobrenome" for="input-sobrenome">Sobrenome</label>
+              </div>
+
+            </div>
+            
+  
+            <div class="label-input-email">
+              <input type="text" id="input-email" name="email" palceholder="" required>
+              <label id="label-email" for="input-email">E-mail</label>
+            </div>
+            <div class="input-gender">
+              
+              <div class="label-input">
+                <input type="tel" id="input-number" name="number" placeholder="" required>
+                <label id="label-number" for="input-number">Numero</label>
+              </div>
+              <div class="gender">
+                <div class="radio-gender">
+                  <input type="radio" id="female" name="gender">
+                  <label for="female">Feminino</label>
+                </div>
+                
+                <div class="radio-gender">
+                  <input type="radio" id="male" name="gender">
+                  <label for="male">Masculino</label>
+                </div>
+                <div class="radio-gender">
+                  <input type="radio" id="outhers" name="gender">
+                  <label for="outhers">Outros</label>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="name-password">
+
+              <div class="label-input-senha" id="stf">
+                <input type="password" id="input-senha" placeholder="" required>
+                <label id="label-senha" for="input-senha">Senha</label>
+                <button class="ver-senha" id="verSenha" type="button">Mostrar</button>
+              </div>
+    
+              <div class="label-input-senha" id="fst">
+                <input type="password" id="input-confirmar-senha" placeholder="" required>
+                <label id="label-confirmar-senha" for="input-cofirmar-senha">Comfirmar senha</label>
+                <button class="ver-senha" id="verConfirmSenha" type="button">Mostrar</button>
+              </div>
+
+            </div>
+            
+          </div>
+          
+
+          
+          
+          <div>
+            <button class="btnCad" onclick="entrar()">ENTRAR</button>
+          </div>
+          
+          <p>Já tem uma conta?
+            <a href="">login</a></p>
+        </form>
+      </div>
+    </div>
+    
+  </body>

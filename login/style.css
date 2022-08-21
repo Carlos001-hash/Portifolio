@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.img-form {
+    background-color: rgb(167 167 255);
+    padding: 10px;
+    border-radius: 50px 0px 0px 50px;
+    display: none;
+    justify-content: center;
+}
+
+.img-form img {
+    width: 500px;
+}
+
+form {
+    width: 332px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    background-color: rgb(25, 24, 48);
+    border-radius: 50px;
+    margin: 0;
+    transition: all .3s ease-out;
+}
+
+form h1 {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+#ms-erro {
+    width: 100%;
+    height: 21px;
+    text-align: center;
+    margin: 14px;
+}
+
+.label-input-grup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-password {
+    display: flex;
+}
+
+.label-input, .label-input-email,
+ .label-input-senha {
+    display: flex;
+    position: relative;
+    padding: 13px;
+    margin-right: 0px;
+}
+
+
+.label-input label,
+.label-input-email label, 
+.label-input-senha label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 23px;
+    color: #8f8f8f;
+    margin-top: 20px;
+    transition: all .3s ease-out;
+}
+
+
+
+.label-input input {
+    padding: 7px 7px;
+    display: inline-block;
+    outline: none;
+    padding-top: 13;
+    min-width: 180px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all .3s ease-out;
+    background-color: #262448;
+    border-radius: 4px 0px 0px 4px;
+    border: 1.5px solid #262448;
+}
+
+.label-input-email input {
+    width: 245px;
+    padding: 7px 7px;
+    display: inline-block;
+    outline: none;
+    padding-top: 13;
+    min-width: 180px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all .3s ease-out;
+    background-color: #262448;
+    border-radius: 4px;
+    border: 1.5px solid #262448;
+}
+
+.label-input input:focus,
+.label-input-email input:focus {
+    border: 1.5px solid #3636a1;
+}
+
+#stf, #fst {
+    width: 100%;
+}
+
+.input-gender {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+}
+
+.radio-gender {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 8px 4px 4px 8px;
+    padding: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: #dddddd;
+}
+
+
+
+.ver-senha {
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 10px 8px 10px;
+    top: 13px;
+    border-radius: 0px 4px 4px 0px;
+    right: 0;
+    display: block;
+    border: none;
+    background-color: #3636A1;
+    color: #ffffff;
+}
+
+.label-input input:valid + label,
+.label-input-email input:valid + label {
+    margin-top: -3px;
+    font-size: 13px;
+    left: 15px;
+    padding-top: 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.btnCad {
+    width: 11em;
+    height: 5vh;
+    border: 0;
+    cursor: pointer;
+    background-color: #3636a1;
+    border-radius: 4px;
+    color: #fcfcff;
+}
+
+button:hover {
+    background-color: #4646a1;
+}
+
+p {
+    margin: 20px;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(91, 91, 255);
+}
+
+p a:hover {
+    color: rgb(115, 115, 255);
+    transition: all .3s ease-out;
+}
+
+@media (min-width: 1130px) {
+    .img-form {
+        display: flex;
+    }
+
+    form {
+        width: 332px;
+        height: 479px;
+        border-radius: 0px 50px 50px 0px;
+    }
+
+}
