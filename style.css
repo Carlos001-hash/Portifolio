@@ -131,8 +131,13 @@ h1 {
   border-radius: 10px;
   height: auto;
   width: 218px;
+  transition: 0.3s;
   
 }
+
+.linguagem-prog:hover {
+  margin-top: 3px;
+} 
 
 .linguagem-prog-javascript h2 {
   animation-name: linguagens-javascript;
@@ -250,6 +255,7 @@ a {
 .cT1 {
   display: flex;
   width: 100%;
+  height: auto;
   padding: 0px 20px;
   margin: 11px 0px 50px 0px;
 }
